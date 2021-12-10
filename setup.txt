@@ -1,0 +1,15 @@
+1.cd root directory 
+
+2.npm i
+
+3.npm run dev
+
+used tech stack 
+1.react
+2.plain css
+3.react router
+
+github link
+
+
+netlify deployed link
