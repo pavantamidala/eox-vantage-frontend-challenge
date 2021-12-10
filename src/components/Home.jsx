@@ -52,6 +52,7 @@ function Home({ uniqueArticles }) {
             })
           : ""}
       </div>
+      {!names.length && <h2 className="load">Loading ...</h2>}
     </div>
   );
 }

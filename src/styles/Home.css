@@ -46,6 +46,7 @@
   margin-left: auto;
   margin-right: auto;
   grid-row-gap: 16px;
+  /* min-height: 100vh; */
 }
 .search {
   display: grid;
@@ -53,8 +54,14 @@
   grid-template-columns: 1fr 1fr;
   width: 200px;
   justify-self: flex-end;
+  height: 20px;
 }
 
 .heading {
   text-align: center;
+}
+
+.load {
+  text-align: center;
+  margin-top: 200px;
 }
