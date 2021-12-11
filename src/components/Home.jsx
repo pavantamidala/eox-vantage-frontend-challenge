@@ -25,6 +25,10 @@ function Home({ uniqueArticles }) {
   }
   function changeHandle(val) {
     setSearchVal(val.target.value);
+    let arr = names.filter((str) => {
+      return str.toLowerCase().includes(searhcVal.toLowerCase());
+    });
+    setNames(arr);
   }
   return (
     <div className="home-wrapper">
