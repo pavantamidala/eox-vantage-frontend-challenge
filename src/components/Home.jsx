@@ -25,8 +25,12 @@ function Home({ uniqueArticles }) {
   }
   function changeHandle(val) {
     setSearchVal(val.target.value);
-    let arr = names.filter((str) => {
-      return str.toLowerCase().includes(searhcVal.toLowerCase());
+    if (val.target.value === "") {
+      setNames(uniqueArticles);
+      return;
+    }
+    let arr = uniqueArticles.filter((str) => {
+      return str.toLowerCase().includes(val.target.value.toLowerCase());
     });
     setNames(arr);
   }
